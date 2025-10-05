@@ -3,7 +3,6 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-orange)
-![License](https://img.shields.io/badge/License-MIT-yellow)
 
 An intelligent surveillance system that combines face recognition, object detection, and pose estimation to provide real-time anomaly detection and automated email alerts for enhanced security in urban environments.
 
@@ -40,7 +39,7 @@ An intelligent surveillance system that combines face recognition, object detect
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/ai-surcam.git
+git clone https://github.com/muthumaran333/AI-SurCam-Real-Time-Anomaly-Detection-for-Urban-Areas.git
 cd ai-surcam
 ```
 
@@ -209,40 +208,3 @@ minNeighbors=5
 - Smart city security systems
 - Access control verification
 - Event security management
-
-## 🛡️ Privacy & Security Considerations
-
-- Store face data securely and comply with local privacy laws
-- Use app-specific passwords for email authentication
-- Consider encryption for sensitive data
-- Implement access controls for the system
-- Inform individuals about surveillance in monitored areas
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📧 Contact
-
-For questions or support, please open an issue on GitHub or contact the development team.
-
-## 🙏 Acknowledgments
-
-- OpenCV for computer vision capabilities
-- Ultralytics for YOLOv8 implementation
-- MediaPipe for pose estimation
-- The open-source community for continuous improvements
-
----
-
-**⚠️ Disclaimer**: This system is intended for legitimate security purposes only. Users are responsible for ensuring compliance with all applicable laws and regulations regarding surveillance and privacy.
