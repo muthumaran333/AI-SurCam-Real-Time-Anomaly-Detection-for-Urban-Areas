@@ -200,6 +200,22 @@ minNeighbors=5
 - **Object Detection**: YOLOv8 for detecting and classifying objects
 - **Pose Estimation**: MediaPipe for human body keypoint detection
 
+### Output
+# Report - 1
+<img width="663" height="551" alt="image" src="https://github.com/user-attachments/assets/95c5dd53-2109-4ae0-bb33-3f4f4993dd12" />
+
+# Report - 2
+<img width="529" height="550" alt="image" src="https://github.com/user-attachments/assets/5ae51ca3-db0a-41c2-84df-282eed8b75d1" />
+
+# Report - 3
+<img width="1321" height="542" alt="image" src="https://github.com/user-attachments/assets/82810d0f-6d54-4208-b10c-7b0049efff44" />
+
+# Sample Output
+
+<img width="1375" height="461" alt="image" src="https://github.com/user-attachments/assets/632b4e39-c010-4cb7-ab34-395f0566ee81" />
+
+
+
 ## 🎯 Use Cases
 
 - Home security monitoring
