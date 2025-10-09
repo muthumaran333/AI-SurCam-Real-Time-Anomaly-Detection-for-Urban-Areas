@@ -27,7 +27,8 @@ An intelligent surveillance system that combines face recognition, object detect
 1. Clone the repository:
 ```bash
 git clone https://github.com/muthumaran333/AI-SurCam-Real-Time-Anomaly-Detection-for-Urban-Areas.git
-cd ai-surcam
+cd AI-SurCam-Real-Time-Anomaly-Detection-for-Urban-Areas
+
 ```
 
 2. Install required dependencies:
