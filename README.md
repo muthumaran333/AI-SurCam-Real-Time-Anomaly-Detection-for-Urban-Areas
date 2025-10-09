@@ -13,19 +13,6 @@ An intelligent surveillance system that combines face recognition, object detect
 - **Pose Estimation**: Implements MediaPipe for human pose detection and analysis
 - **Automated Email Alerts**: Sends email notifications with captured images when unknown persons are detected
 - **Person Tracking**: Assigns unique IDs to detected individuals and maintains tracking history
-- **Heatmap Generation**: Creates visual heatmaps for detection analysis
-- **PDF Report Generation**: Generates comprehensive PDF reports with detection data
-
-## 📋 Table of Contents
-
-- [Installation](#installation)
-- [Dependencies](#dependencies)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [How It Works](#how-it-works)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## 🚀 Installation
 
@@ -89,7 +76,6 @@ ai-surcam/
 │   └── labels.txt
 │
 ├── yolov8n.pt               # YOLOv8 model weights
-├── requirements.txt         # Python dependencies
 └── README.md               # Project documentation
 ```
 
