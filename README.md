@@ -35,11 +35,6 @@ cd ai-surcam
 pip install -r requirements.txt
 ```
 
-3. Install OpenCV with contrib modules:
-```bash
-pip install opencv-contrib-python
-```
-
 4. Download YOLOv8 model:
 ```bash
 # The model will be automatically downloaded on first run
@@ -61,23 +56,40 @@ reportlab>=3.6.0
 ## 📁 Project Structure
 
 ```
-ai-surcam/
+AI-SurCam-Real-Time-Anomaly-Detection-for-Urban-Areas/
+├── images/                           # Output and report images
+├── src/                              # Source code
+│   ├── capture_image.py              # Captures face images for training dataset
+│   ├── train_dataset.py              # Trains the face recognition model
+│   ├── CodeWithAlertMessage.py       # Main surveillance system with alerts
+│   ├── map.py                        # Generates PDF reports with heatmaps
+│   ├── haarcascade_frontalface_default.xml
 │
-├── capture_image.py          # Captures face images for training dataset
-├── train_dataset.py          # Trains the face recognition model
-├── CodeWithAlertMessage.py   # Main surveillance system with alerts
-├── map.py                    # Generates PDF reports with heatmaps
+├── dataset_faces/                    # Directory for storing face images 
+│   └── [person_name]/                # when you run capture_image.py it will create automatically
 │
-├── dataset_faces/            # Directory for storing face images
-│   └── [person_name]/        # Subdirectory for each person
-│
-├── models/                   # Directory for trained models
-│   ├── trained_face_model.yml
+├── models/                           # Directory for trained models
+│   ├── trained_face_model.yml        # if you run the train_dataset.py it will automatically created
 │   └── labels.txt
 │
-├── yolov8n.pt               # YOLOv8 model weights
-└── README.md               # Project documentation
+├── yolov8n.pt                        # YOLOv8 model weights (automatically or mannually)
+├── requirements.txt                  # Dependency list
+└── README.md                         # Project documentation
 ```
+
+> **Note:** Ensure the following folders and files are initialized before running the project:
+>
+> - Create the `dataset_faces/` directory for storing face images.
+> - Create the `models/` directory for saving trained models.
+> - Place `yolov8n.pt` (YOLOv8 weights) in the project root, or let it download automatically on first run.
+> - If `trained_face_model.yml` and `labels.txt` do not exist in `models/`, they will be generated after training.
+>
+> You can initialize the folders using these commands:
+>
+> ```bash
+> mkdir -p dataset_faces
+> mkdir -p models
+> ```
 
 ## 💻 Usage
 
@@ -86,7 +98,7 @@ ai-surcam/
 Run the image capture script to collect training data for known persons:
 
 ```bash
-python capture_image.py
+python src/capture_image.py
 ```
 
 - Enter the person's name when prompted
@@ -98,7 +110,7 @@ python capture_image.py
 Train the model with captured face images:
 
 ```bash
-python train_dataset.py
+python src/train_dataset.py
 ```
 
 This will:
@@ -112,7 +124,7 @@ This will:
 Start the main surveillance application:
 
 ```bash
-python CodeWithAlertMessage.py
+python src/CodeWithAlertMessage.py
 ```
 
 Features active in this mode:
@@ -122,14 +134,6 @@ Features active in this mode:
 - Pose estimation overlay
 - Automated email alerts after 30 seconds of unknown person presence
 - Press 'q' to quit
-
-### Step 4: Generate Reports (Optional)
-
-Create PDF reports with detection heatmaps:
-
-```bash
-python map.py
-```
 
 ## ⚙️ Configuration
 
@@ -187,18 +191,20 @@ minNeighbors=5
 - **Pose Estimation**: MediaPipe for human body keypoint detection
 
 ### Output
+
 # Report - 1
-<img width="663" height="551" alt="image" src="https://github.com/user-attachments/assets/95c5dd53-2109-4ae0-bb33-3f4f4993dd12" />
-
+![Report 1](images/image_1.png)
 # Report - 2
-<img width="529" height="550" alt="image" src="https://github.com/user-attachments/assets/5ae51ca3-db0a-41c2-84df-282eed8b75d1" />
-
+![Report 2](images/image_2.png)
 # Report - 3
-<img width="1321" height="542" alt="image" src="https://github.com/user-attachments/assets/82810d0f-6d54-4208-b10c-7b0049efff44" />
+![Report 3](images/image_3.png)
+
 
 # Sample Output
 
-<img width="1375" height="461" alt="image" src="https://github.com/user-attachments/assets/632b4e39-c010-4cb7-ab34-395f0566ee81" />
+![Sample Output 1](images/image_6.png)
+
+![Sample Output 2](images/image_7.png)
 
 
 

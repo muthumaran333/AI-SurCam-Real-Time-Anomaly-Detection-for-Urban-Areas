@@ -1,0 +1,9 @@
+opencv-python
+opencv-contrib-python
+torch
+ultralytics
+mediapipe
+numpy
+smtplib
+ssl
+email
