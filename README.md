@@ -204,16 +204,6 @@ minNeighbors=5
 
 ### Output
 
-# Report - 1
-![Report 1](images/image_1.png)
-# Report - 2
-![Report 2](images/image_2.png)
-# Report - 3
-![Report 3](images/image_3.png)
-
-
-# Sample Output
-
 ![Sample Output 1](images/image_8.png)
 
 ![Sample Output 2](images/image_7.png)
