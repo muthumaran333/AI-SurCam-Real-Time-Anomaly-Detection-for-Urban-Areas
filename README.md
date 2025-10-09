@@ -88,8 +88,8 @@ AI-SurCam-Real-Time-Anomaly-Detection-for-Urban-Areas/
 > You can initialize the folders using these commands:
 >
 > ```bash
-> mkdir -p dataset_faces
-> mkdir -p models
+> mkdir -p src/dataset_faces 
+> mkdir -p src/models
 > ```
 
 ## 💻 Usage
