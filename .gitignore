@@ -1,0 +1,33 @@
+# Python virtual environment
+venv/
+ENV/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Model weights and trained models
+yolov8n.pt
+models/trained_face_model.yml
+models/labels.txt
+
+# Face dataset images
+dataset_faces/
+
+# Output images and reports
+
+# Ignore environment variable files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PDF reports
+*.pdf

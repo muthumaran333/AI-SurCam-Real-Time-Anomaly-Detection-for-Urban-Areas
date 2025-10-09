@@ -10,6 +10,10 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.image import MIMEImage
 from ultralytics import YOLO
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Load YOLOv8 model
 model = YOLO("yolov8n.pt")
@@ -36,12 +40,18 @@ face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_fronta
 mp_pose = mp.solutions.pose
 pose = mp_pose.Pose()
 
+# Email credentials from environment variables
+sender_email = os.getenv("SENDER_EMAIL")
+receiver_email = os.getenv("RECEIVER_EMAIL")
+password = os.getenv("EMAIL_PASSWORD")
+
 
 # Email Notification Function
 def send_email_alert(known_name, unknown_id, frame):
-    sender_email = "finalyearproject2812@gmail.com"
-    receiver_email = "finalyearproject2812@gmail.com"
-    password = "lghkfkivfgwmbfml"
+    # Use credentials from environment variables
+    sender_email = os.getenv("SENDER_EMAIL")
+    receiver_email = os.getenv("RECEIVER_EMAIL")
+    password = os.getenv("EMAIL_PASSWORD")
 
     subject = "ALERT: Unknown Person Detected with Known Person"
     body = f"An unknown person (ID: {unknown_id}) was detected along with {known_name}. Please check the surveillance footage immediately."

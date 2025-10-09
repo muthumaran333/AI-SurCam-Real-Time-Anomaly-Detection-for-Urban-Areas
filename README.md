@@ -31,7 +31,13 @@ cd AI-SurCam-Real-Time-Anomaly-Detection-for-Urban-Areas
 
 ```
 
-2. Install required dependencies:
+2. (Recommended) Create a virtual environment:
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+3. Install required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
