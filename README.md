@@ -214,7 +214,7 @@ minNeighbors=5
 
 # Sample Output
 
-![Sample Output 1](images/image_6.png)
+![Sample Output 1](images/image_8.png)
 
 ![Sample Output 2](images/image_7.png)
 
