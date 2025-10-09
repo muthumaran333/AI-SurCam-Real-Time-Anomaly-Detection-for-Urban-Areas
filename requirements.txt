@@ -2,8 +2,6 @@ opencv-python
 opencv-contrib-python
 torch
 ultralytics
-mediapipe
+mediapipe>=0.8.0,<0.11.0
 numpy
-smtplib
-ssl
-email
+python-dotenv

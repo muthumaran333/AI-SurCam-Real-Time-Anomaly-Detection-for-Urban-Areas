@@ -22,6 +22,11 @@ An intelligent surveillance system that combines face recognition, object detect
 - Webcam or IP camera
 - Internet connection (for email alerts)
 
+> **Important:**  
+> The `mediapipe` library only supports Python versions **3.7–3.11**.  
+> If you use Python 3.12 or higher, `mediapipe` will not install.  
+> Please ensure your Python version is **3.7, 3.8, 3.9, 3.10, or 3.11**.
+
 ### Setup
 
 1. Clone the repository:
