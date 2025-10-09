@@ -89,20 +89,6 @@ AI-SurCam-Real-Time-Anomaly-Detection-for-Urban-Areas/
 └── README.md                         # Project documentation
 ```
 
-> **Note:** Ensure the following folders and files are initialized before running the project:
->
-> - Create the `dataset_faces/` directory for storing face images.
-> - Create the `models/` directory for saving trained models.
-> - Place `yolov8n.pt` (YOLOv8 weights) in the project root, or let it download automatically on first run.
-> - If `trained_face_model.yml` and `labels.txt` do not exist in `models/`, they will be generated after training.
->
-> You can initialize the folders using these commands:
->
-> ```bash
-> mkdir -p src/dataset_faces 
-> mkdir -p src/models
-> ```
-
 ## 💻 Usage
 
 ### Step 1: Capture Face Images
